@@ -11,7 +11,7 @@ def conundrum(line):
     for n in re.split('; |: |\n', line):
         blue, green, red = 0, 0, 0
 
-        # split each game by color
+        # split each game by color and count
         for nn in re.split(', ', n):
             if "blue" in re.split('\s', nn):
                 blue = int(re.split('\s', nn)[0])
